@@ -4,12 +4,12 @@
   "description": "S3 bucket file uploader for softvence",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sabbir/softvence"
+    "url": "https://github.com/devlopersabbir/softvence"
   },
   "bugs": {
-    "url": "https://github.com/sabbir/softvence/issues"
+    "url": "https://github.com/devlopersabbir/softvence/issues"
   },
-  "homepage": "https://github.com/sabbir/softvence#readme",
+  "homepage": "https://github.com/devlopersabbir/softvence#readme",
   "keywords": [
     "s3",
     "s3-bucket",
@@ -28,6 +28,9 @@
     "dist/**/*",
     "*.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
@@ -37,6 +40,8 @@
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
     "node-cache": "^5.1.2",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
@@ -48,8 +53,9 @@
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.1",
-    "@types/express": "^5.0.0",
+    "@types/express": "^5.0.5",
     "@types/jest": "^30.0.0",
+    "@types/multer": "^2.0.0",
     "@types/node": "^22.10.7",
     "@types/supertest": "^6.0.2",
     "eslint": "^9.18.0",

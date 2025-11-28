@@ -4,12 +4,12 @@
   "description": "Mail service for softvence",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sabbir/softvence"
+    "url": "https://github.com/devlopersabbir/softvence"
   },
   "bugs": {
-    "url": "https://github.com/sabbir/softvence/issues"
+    "url": "https://github.com/devlopersabbir/softvence/issues"
   },
-  "homepage": "https://github.com/sabbir/softvence#readme",
+  "homepage": "https://github.com/devlopersabbir/softvence#readme",
   "keywords": [
     "mail",
     "mail-service",
@@ -28,6 +28,9 @@
     "dist/**/*",
     "*.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
@@ -41,6 +44,7 @@
     "nodemailer": "^7.0.11",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
+    "type-fest": "^5.2.0",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
